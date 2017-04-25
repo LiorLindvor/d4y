@@ -2307,6 +2307,11 @@ margin-bottom: 30px !important;
     .d4y-firstsection h1 span {
       display: inline-block;
     }
+
+    .d4y-background {
+      background-image: url('../images/d4y/background-pattern.png');
+      background-size: 100% 100%;
+    }
   }
 
   @media (max-width: 767px) {
