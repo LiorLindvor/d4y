@@ -1895,11 +1895,11 @@ margin-bottom: 30px !important;
     background-color: #232842;
     background-image: url('../images/d4y/background-pattern.png'), url('../images/d4y/background-icons-section-1.png');
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
-  
+
   .d4y-background-2 {
     background-image: url('../images/d4y/background-icons-section-2.png');
     background-attachment: fixed;
@@ -1907,7 +1907,7 @@ margin-bottom: 30px !important;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
-  
+
   .d4y-background-3 {
     background-color: #232842;
     background-image: url('../images/d4y/background-icons-section-3.png');
@@ -2099,12 +2099,12 @@ margin-bottom: 30px !important;
     font-weight: bold;
     margin-bottom: 50px;
   }
-  
+
   .d4y-bonus-price p span {
     position: relative;
     display: inline-block;
   }
-  
+
   .d4y-bonus-price p span::after {
     content: "";
     position: absolute;
@@ -2135,7 +2135,7 @@ margin-bottom: 30px !important;
     line-height: 70px;
     position: relative;
   }
-  
+
   .d4y-bonus-price-old span:first-of-type::after {
     content: "";
     position: absolute;
