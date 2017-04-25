@@ -1903,7 +1903,7 @@ margin-bottom: 30px !important;
   .d4y-background-2 {
     background-image: url('../images/d4y/background-icons-section-2.png');
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -1912,7 +1912,7 @@ margin-bottom: 30px !important;
     background-color: #232842;
     background-image: url('../images/d4y/background-icons-section-3.png');
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -2310,6 +2310,19 @@ margin-bottom: 30px !important;
   }
 
   @media (max-width: 767px) {
+    .d4y-background {
+      background-image: url('../images/d4y/background-pattern.png');
+      background-size: 100% 100%;
+    }
+
+    .d4y-background-2 {
+      background-image: none;
+    }
+
+    .d4y-background-3 {
+        background-image: none;
+      }
+
     .d4y-firstsection h1 {
       font-size: 30px;
       line-height: 40px;
