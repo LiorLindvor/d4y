@@ -2294,7 +2294,35 @@ margin-bottom: 30px !important;
     margin: 30px auto 0;
   }
 
+  .d4y-upsell-footer {
+    background: #EFF2F7;
+    padding: 60px 0;
+  }
 
+  .d4y-upsell-footer a {
+    color: #848CA1;
+    font-size: 18px;
+    display: block;
+    font-family: 'Montserrat';
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+
+  .d4y-upsll-content {
+    padding-bottom: 60px !important;
+  }
+
+  .d4y-upsll-content h3 {
+    color:#232842;
+    font-size: 28px;
+  }
+
+  .d4y-upsell-stop {
+    background: url('../images/d4y/upsell/stop.png') no-repeat;
+    width: 153px;
+    height: 153px;
+    margin: 40px auto;
+  }
 
   /*********************************************
     Media Queries
