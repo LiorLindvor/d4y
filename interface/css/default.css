@@ -2502,6 +2502,10 @@ margin-bottom: 30px !important;
       font-weight: normal;
       margin: 10px;
     }
+
+    .d4y-video-container-green {
+      border-color: #50b487;
+    }
   /*********************************************
     Media Queries
   *********************************************/
