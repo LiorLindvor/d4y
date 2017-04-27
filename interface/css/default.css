@@ -2007,8 +2007,14 @@ margin-bottom: 30px !important;
 
   .d4y-video-videobox-content a:hover,
   .d4y-video-videobox-content a:active {
-
+    background-color: #ff6c09;
+    box-shadow: 0 0px 2px rgba(0,0,0,.1);
   }
+
+  .d4y-video-videobox-content a:focus {
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.4);
+  }
+
 
   .d4y-video-videobox-content img {
     display: block;
@@ -2286,7 +2292,12 @@ margin-bottom: 30px !important;
 
   .d4y-bonus-information a:hover,
   .d4y-bonus-information a:active {
+    background: #ff6c09;
+    box-shadow: 0 0 2px rgba( 255, 255, 255, .1 );
+  }
 
+  .d4y-bonus-information a:focus {
+    box-shadow: inset 0 1px 2px rgba( 0, 0, 0, .4 );
   }
 
   .d4y-bonus-information-images img {
