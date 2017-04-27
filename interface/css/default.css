@@ -2398,11 +2398,20 @@ margin-bottom: 30px !important;
     }
 
     .d4y-video-item {
-      border: 1px dashed #fff;
-      padding: 5px;
+      border: 2px dashed rgba( 255, 255, 255, .6 );
+      padding: 10px;
       border-radius: 5px;
     }
 
+    .d4y-videos { float: none; margin: -140px auto 40px auto }
+
+    .d4y-thankyou-videos-background{ background-color: #eeeff6; }
+
+    .d4y-videos h4 {
+      font-size: 25.93px;
+      text-transform: uppercase;
+      margin: 20px 0 20px 0;
+    }
   /*********************************************
     Media Queries
   *********************************************/
