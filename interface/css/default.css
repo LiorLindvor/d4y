@@ -2337,6 +2337,72 @@ margin-bottom: 30px !important;
 
   .d4y-thankyou {}
 
+    .d4y-thankyou-firstsection .col-sm-7.col-xs-12 {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .d4y-thankyou-order-confirmd {
+      background: rgba( 25, 28, 44, .49 );
+      margin: 40px auto 40px auto;
+      padding: 20px 15px 15px 15px;
+      border-radius: 5px;
+    }
+
+    .d4y-thankyou-order-confirmd h3 {
+      color: #eaedfa;
+      font-size: 16.32px;
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .d4y-thankyou-order-confirmd h3 span {
+      color: #fac047;
+    }
+
+    .d4y-thankyou-order-confirmd p {
+      color: #4f588d;
+      font-style: italic;
+      font-family: 'Fira Sans';
+      font-size: 15.48px;
+
+    }
+
+    .d4y-thankyou-order-confirmd a {
+      color: #6878d3;
+    }
+
+    .d4y-thankyou-firstsection h1 {
+      color: #efb731;
+      font-size: 39px;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .d4y-thankyou-firstsection h2 {
+      color: #fff;
+      font-size: 19.23px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .d4y-thankyou-downArrow {
+      position: absolute;
+      bottom: -127px;
+      right: -80px;
+      background: url( '../images/d4y/thankyou/arrow.png' ) no-repeat;
+      width: 211px;
+      height: 144px;
+    }
+
+    .d4y-video-item {
+      border: 1px dashed #fff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
   /*********************************************
     Media Queries
   *********************************************/
