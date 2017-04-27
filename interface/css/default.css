@@ -2412,6 +2412,96 @@ margin-bottom: 30px !important;
       text-transform: uppercase;
       margin: 20px 0 20px 0;
     }
+
+    .d4y-thankyou-content {
+      background: #fff;
+    }
+
+    .d4y-thankyou-content .d4y-thankyou-bonus-opening {
+      margin: 0 auto;
+      float: none;
+    }
+
+    .d4y-thankyou-bonus-opening img {
+      margin-top: 40px;
+    }
+
+    .d4y-thankyou-content .d4y-thankyou-bonus-opening p{
+      color: #444961;
+      font-family: 'Fira Sans';
+      font-size: 17px;
+      margin-top: 40px;
+    }
+
+    .inboxed-icon {
+      margin-bottom: 40px;
+    }
+
+    .d4y-video-container {
+      border: 2px dashed #eeeff6;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .d4y-video-header {
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .d4y-video-header-title {
+      font-size: 30.66px;
+      color: #262b43;
+      font-family: 'Patua One';
+      padding-right: 10px;
+      display: table-cell;
+      text-align: left;
+    }
+
+    .d4y-video-header-title:after {
+      content: '';
+      background: #262b43;
+      height: 29px;
+      position: absolute;
+      width: 1px;
+      top: 50%;
+      left: 50%;
+      margin-left: -0.5px;
+      margin-top: -14.5px;
+    }
+
+    .d4y-video-header {
+      display: table;
+      margin: 20px auto 0 auto;
+    }
+
+    .d4y-video-header-description {
+      color: #161a2f;
+      font-size: 11.51px;
+      font-family: 'Montserrat';
+      text-transform: uppercase;
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    .d4-video-container .d4y-video-item {
+      margin-bottom: 20px;
+    }
+
+    .d4y-video-footer a {
+      border-radius: 5px;
+      color: #efb732;
+      font-size: 17px;
+      border-radius: 5px;
+      display: block;
+      background: #262b43;
+      padding: 15px 0 15px 0;
+      font-family: 'Patua One';
+      font-weight: normal;
+      margin: 10px;
+    }
   /*********************************************
     Media Queries
   *********************************************/
