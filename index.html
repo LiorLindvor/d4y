@@ -38,7 +38,7 @@
                 <span>$9.90 Per Day</span>!
               </h2>
 
-              <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBGQZK9PTWXCW">Automate My Email Marketing Now!</a>
+              <a href="#" data-scroll-to="payment">Automate My Email Marketing Now!</a>
 
               <img src="interface/images/d4y/security-logos.png" alt="" />
               <img src="interface/images/d4y/cc-logos.png" alt="" />
@@ -83,7 +83,7 @@
         </div>
       </section>
 
-      <section class="d4y-bonus d4y-background-3 text-center">
+      <section id="payment" class="d4y-bonus d4y-background-3 text-center">
         <div class="container">
           <div class="d4y-bonus-content">
             <img src="interface/images/d4y/bonus-illustration.png" alt="" />
@@ -156,7 +156,7 @@
               </span>
             </div>
 
-            <a href="#">Automate My Email Marketing Now!</a>
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBGQZK9PTWXCW">Automate My Email Marketing Now!</a>
 
             <div class="d4y-bonus-information-images">
               <img src="interface/images/d4y/security-logos-2.png" alt="" />
@@ -370,6 +370,13 @@
       localStorage.setItem('timer', new Date().addDays(4) );
     initializeClock('timer', localStorage.getItem('timer'));
 
+    $("[data-scroll-to]").each( function()
+    {
+      var to = $( this ).attr( "data-scroll-to" );
+      $('html, body').animate({
+         'scrollTop':   $('#' + to).offset().top
+       }, 2000);
+    });
   </script>
     </body>
 </html>
