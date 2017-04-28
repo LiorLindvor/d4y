@@ -117,18 +117,18 @@
           </div>
 
           <div class="d4y-bonus-time">
-            <div class="d4y-bonus-time-wrapper timer clearfix">
-              <div class="d4y-bonus-time-digit">0</div>
-              <div class="d4y-bonus-time-digit days">2</div>
+            <div class="d4y-bonus-time-wrapper clearfix" id="timer">
+              <div class="d4y-bonus-time-digit days-1">0</div>
+              <div class="d4y-bonus-time-digit days-2">2</div>
               <div class="d4y-bonus-time-divider">:</div>
-              <div class="d4y-bonus-time-digit">0</div>
-              <div class="d4y-bonus-time-digit houres">3</div>
+              <div class="d4y-bonus-time-digit hours-1">0</div>
+              <div class="d4y-bonus-time-digit hours-2">3</div>
               <div class="d4y-bonus-time-divider">:</div>
-              <div class="d4y-bonus-time-digit">5</div>
-              <div class="d4y-bonus-time-digit minutes">9</div>
+              <div class="d4y-bonus-time-digit minutes-1">5</div>
+              <div class="d4y-bonus-time-digit minutes-2">9</div>
               <div class="d4y-bonus-time-divider">:</div>
-              <div class="d4y-bonus-time-digit">3</div>
-              <div class="d4y-bonus-time-digit seconds">6</div>
+              <div class="d4y-bonus-time-digit seconds-1">3</div>
+              <div class="d4y-bonus-time-digit seconds-2">6</div>
             </div>
             <div class="d4y-bonus-time-text">
               <div class="row">
@@ -313,19 +313,19 @@
     <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
     <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="interface/js/application.js"></script>
-    <script type="text/javascript" src="interface/js/placeholder.min.js"></script>
-    <script type="text/javasscript">
+    <!--<script type="text/javascript" src="interface/js/application.js"></script>-->
+    <script type="text/javascript">
     function getTimeRemaining(endtime) {
       var t = Date.parse(endtime) - Date.parse(new Date());
       var seconds = Math.floor((t / 1000) % 60);
       var minutes = Math.floor((t / 1000 / 60) % 60);
       var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
       var days = Math.floor(t / (1000 * 60 * 60 * 24));
+
       return {
         'total': t,
         'days': days,
-        'hours': hours*(days+1),
+        'hours': hours,
         'minutes': minutes,
         'seconds': seconds
       };
@@ -333,16 +333,25 @@
 
     function initializeClock(id, endtime) {
       var clock = document.getElementById(id);
-      var hoursSpan = clock.querySelector('.hours');
-      var minutesSpan = clock.querySelector('.minutes');
-      var secondsSpan = clock.querySelector('.seconds');
+      var days1Span = clock.querySelector('.days-1');
+      var days2Span = clock.querySelector('.days-2');
+      var hours1Span = clock.querySelector('.hours-1');
+      var hours2Span = clock.querySelector('.hours-2');
+      var minutes1Span = clock.querySelector('.minutes-1');
+      var minutes2Span = clock.querySelector('.minutes-2');
+      var seconds1Span = clock.querySelector('.seconds-1');
+      var seconds2Span = clock.querySelector('.seconds-2');
 
       function updateClock() {
         var t = getTimeRemaining(endtime);
-
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        days1Span.innerHTML = '0';
+        days2Span.innerHTML = ('0' + t.days).slice(-1);
+        hours1Span.innerHTML = (''+t.hours).slice(0, 1);
+        hours2Span.innerHTML = ('0' + t.hours).slice(-1);
+        minutes1Span.innerHTML = (''+t.minutes).slice(0, 1);
+        minutes2Span.innerHTML = ('0' + t.minutes).slice(-1);
+        seconds1Span.innerHTML = (''+t.seconds).slice(0, 1);
+        seconds2Span.innerHTML = ('0' + t.seconds).slice(-1);
 
         if (t.total <= 0) {
           clearInterval(timeinterval);
@@ -352,18 +361,15 @@
       updateClock();
       var timeinterval = setInterval(updateClock, 1000);
     }
+    Date.prototype.addDays = function(days) {
+        this.setDate(this.getDate() + parseInt(days));
+        return this;
+    };
 
-    function addDays(date, days) {
-        var result = new Date(date);
-        result.setDate(result.getDate() + days);
-        return result;
-    }
+    if( localStorage.getItem('timer') == null )
+      localStorage.setItem('timer', new Date().addDays(4) );
+    initializeClock('timer', localStorage.getItem('timer'));
 
-
-      var deadline = new Date();
-          deadline = addDays( deadline, 4 );
-
-    initializeClock('timer', deadline);
   </script>
     </body>
 </html>
