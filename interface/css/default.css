@@ -2340,6 +2340,8 @@ margin-bottom: 30px !important;
     margin: 40px auto;
   }
 
+  .d4y-upsell-video-videobox{ margin-top: -120px; }
+
   .d4y-thankyou {}
 
     .d4y-thankyou-firstsection .col-sm-7.col-xs-12 {
@@ -2371,6 +2373,7 @@ margin-bottom: 30px !important;
       font-style: italic;
       font-family: 'Fira Sans';
       font-size: 15.48px;
+      margin-top: 10px;
 
     }
 
