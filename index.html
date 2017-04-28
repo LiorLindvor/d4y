@@ -370,7 +370,7 @@
       localStorage.setItem('timer', new Date().addDays(4) );
     initializeClock('timer', localStorage.getItem('timer'));
 
-    $("[data-scroll-to]").each( function()
+    $("[data-scroll-to]").click( function()
     {
       var to = $( this ).attr( "data-scroll-to" );
       $('html, body').animate({
