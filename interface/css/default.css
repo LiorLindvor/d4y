@@ -2317,6 +2317,11 @@ margin-bottom: 30px !important;
     font-family: 'Montserrat';
     letter-spacing: 0;
     line-height: 36px;
+    text-decoration: underline;
+  }
+
+  .d4y-upsell-footer a:hover {
+    font-weight: bold;
   }
 
   .d4y-upsll-content {
