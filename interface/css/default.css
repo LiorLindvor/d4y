@@ -2415,6 +2415,7 @@ margin-bottom: 30px !important;
 
     .d4y-thankyou-content {
       background: #fff;
+      padding-bottom: 0 !important;
     }
 
     .d4y-thankyou-content .d4y-thankyou-bonus-opening {
@@ -2439,9 +2440,9 @@ margin-bottom: 30px !important;
 
     .d4y-video-container {
       border: 2px dashed #eeeff6;
-      padding: 10px;
+      padding: 20px 30px 20px 30px;
       border-radius: 5px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .d4y-video-header {
@@ -2472,7 +2473,7 @@ margin-bottom: 30px !important;
 
     .d4y-video-header {
       display: table;
-      margin: 20px auto 0 auto;
+      /*20*/margin: 0 auto 0 auto;
     }
 
     .d4y-video-header-description {
@@ -2502,9 +2503,39 @@ margin-bottom: 30px !important;
       font-weight: normal;
       margin: 10px;
     }
+/*Chnage*/
+    .d4y-video-footer a:hover {
+      background: #262c4a;
+    }
+    /*Chnage*/
+    .d4y-video-footer a:focus {
+      box-shadow: inset 0 1px 2px rgba( 255, 255, 255, .3 );
+    }
 
     .d4y-video-container-green {
       border-color: #50b487;
+    }
+
+    .d4y-video-container-green img {
+      width: 27px;
+      vertical-align: top;
+      margin-top: 10px;
+    }
+
+    .d4y-video-container-green .d4y-video-header {
+      display: block;
+      margin-top: -45px;
+    }
+
+    .d4y-video-container-green .d4y-video-header-title {
+      text-align: center;
+      display: inline-block;
+      background: #fff;
+      padding: 0 20px 0 20px;
+    }
+
+    .d4y-video-container-green .d4y-video-header-title:after {
+      display: none;
     }
   /*********************************************
     Media Queries
